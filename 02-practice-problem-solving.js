@@ -1,3 +1,4 @@
+//Return array of entries longer than 6 characters
 const spotTheDifference = arr => {
     const filteredWords = [...arr].filter(word => word.length > 6);
     return filteredWords;
@@ -5,6 +6,7 @@ const spotTheDifference = arr => {
 
 console.log(spotTheDifference(["spray", "limit", "disco", "exuberant", "destruction", "present"]));
 
+//Convert all entries in an array to use camel case
 const discoShoes = arr => {
     const camelCased = [...arr].map(entry => {
         const splitEntry = entry.split(' ');
@@ -16,6 +18,7 @@ const discoShoes = arr => {
 
 console.log(discoShoes(["please camel", "join casing", "these disco", "with shoes"]));
 
+//Calculate score of a word in scrabble from an array of tile objects
 const scrabble = arr => {
     const values = [...arr].map(object => object.value);
     const score = values.reduce((a, b) => a + b);

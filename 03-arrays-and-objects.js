@@ -1,3 +1,4 @@
+//Convert each entry from miles to KM and return an object of those results and a total distance in KM
 const milesToKm = arr => {
     const converted = [...arr].map(miles => miles * 1.609344);
     return {
@@ -8,6 +9,7 @@ const milesToKm = arr => {
 
 console.log(milesToKm([10, 5]));
 
+//Filter an array of food objects based upon a given parameter
 const filterFood = (arr, type) => {
     const filtered = [...arr].filter(obj => obj.foodType === type);
     return filtered;
@@ -25,6 +27,7 @@ console.log(filterFood([
      { img: "🥣", name: "soup", foodType: "healthy" },
     ], 'healthy'));
 
+//Add an ID, change name to hero, and add a random power level to each hero
 const heroes = arr => {
     const addedInfo = [...arr].map((heroOjb, index) => {
         return {
